@@ -1,18 +1,29 @@
-def m : Nat := 1
-def n : Nat := 2
-def isNice : Bool := false
-def amINice : Bool := false
+#check Nat -> Nat
 
-#check m
+#check Nat × Nat
 
-#check isNice
+#check Prod Nat Nat
 
-#check n + 0
+#check Nat -> Nat -> Nat
 
-#check m * (n+0)
+#check Nat × Nat -> Nat
 
-#check isNice && amINice
+#check Nat.succ
 
-#check true
+#check (0,1)
 
-#eval 5*4
+#check Nat.add
+
+#check Nat.succ 2
+
+#check Nat.add 3
+
+#eval Nat.succ 3
+
+#eval Nat.add 5 6
+
+#check (3,5).1
+#check (3,5).2
+
+#eval (3,5).1
+#eval (3,5).2
